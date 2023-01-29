@@ -1,0 +1,58 @@
+<html>
+    <script>
+        //Array
+        var carros = ["Gol", "Palio", "Uno"];
+        console.log(carros);
+
+        //Aqui eu estou pegando os carros da lista de array
+        var primeiroCarro = carros[0];
+        var segundoCarro = carros[1];
+        var terceiroCarro = carros[2];
+        
+        //Aqui ele vai apresentar a lista no console do Browser
+        console.log("primeira posição: " + primeiroCarro );
+        console.log("segunda posição: " + segundoCarro);
+        console.log("terceira posição: " + terceiroCarro);
+
+        //Alterar um elemento da lista array
+        carros[2] = "Argo";
+        //Aqui vou imprimir no console esta alteração
+        console.log(carros[2]);
+
+        //Imprimindo o tamanho da array usando a propriedade "length"
+        console.log("tamanho do array: " + carros.length);
+
+
+        //pegar o último elemento da array usando a propriedade "length"
+        console.log("último elemento do array: " + carros[carros.length - 1]);
+        /* usamos a propriedade length aderindo o "-1", pois o tamanho da array começa
+        no índice zero e o tamanho da array é três, ou seja, se pegar o índice da
+        lista do array que vai até o número 2 - no caso o Uno -, o console apresenta "undefined".
+        Quando inserimos o "-1", a array retorna de forma correta. */
+
+        //Inserindo um elemento novo no array
+        carros[3] = "Sandero";
+        console.log("último elemento do array: " + carros[carros.length - 1]);
+
+        //Inserindo um novo elemento na última posição da array
+        carros[carros.length] = "Civic";
+        console.log("último elemento do array: " + carros[carros.length -1]);
+
+        //Inserir um elemento com a propriedade "push"
+        carros.push("Polo");
+        console.log(carros);
+
+        //Inserir elementos no ínicio da lista usando a propriedade "unshift"
+        carros.unshift("Jetta");
+        console.log(carros);
+        
+        //Remover o primeiro elemento da lista usando a propriedade "shift"
+        console.log(carros.shift());
+        console.log(carros);
+
+        //Remover o último elemento da lista usando a propriedade "pop"
+        console.log(carros.pop());
+        console.log(carros);
+
+    </script>
+</html>
